@@ -1,0 +1,9 @@
+/* app.component.css */
+
+/* Optional background override or app-wide wrapper styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+}
