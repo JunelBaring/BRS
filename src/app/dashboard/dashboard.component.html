@@ -1,7 +1,37 @@
-<div class="container">
-  <div class="dashboard-box">
-    <h2>Dashboard</h2>
-    <p>Welcome to Barangay Facilities Reservation!</p>
-    <button (click)="logout()">Logout</button>
-  </div>
+<div class="dashboard-container">
+  <header class="top-bar">
+    <div class="user-info">
+      <img src="assets/user.png" alt="Profile" class="profile-img" />
+      <div>
+        <h3>Welcome Resident</h3>
+        <p class="greeting">Good Morning</p>
+      </div>
+    </div>
+    <div class="location-info">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Your Location</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="Municipality Logo" class="municipal-logo" />
+    </div>
+    <div class="welcome-text">
+      <h1>Welcome to the Barangay Facilities Reservation System!</h1>
+      <p>
+        This web app lets you choose what barangay facility you want to reserve, based on our currently
+        available barangay facilities.
+      </p>
+    </div>
+  </main>
+
+  <footer class="bottom-nav">
+    <button (click)="navigateTo('home')"><i class="fas fa-home"></i><span>Home</span></button>
+    <button (click)="navigateTo('reserve')"><i class="fas fa-calendar-plus"></i><span>Reserve</span></button>
+    <button (click)="navigateTo('facilities')"><i class="fas fa-building"></i><span>Facilities</span></button>
+    <button (click)="navigateTo('my-reservations')"><i class="fas fa-clock"></i><span>My Reservations</span></button>
+    <button (click)="navigateTo('profile')"><i class="fas fa-user"></i><span>Profile</span></button>
+  </footer>
+  
 </div>

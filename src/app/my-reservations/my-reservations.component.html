@@ -1,0 +1,36 @@
+<div class="reservations-container">
+    <header class="top-bar">
+      <div class="user-info">
+        <img src="assets/user.png" alt="Profile" class="profile-img" />
+        <div>
+          <h3>My Reservations</h3>
+          <p class="greeting">Track your bookings</p>
+        </div>
+      </div>
+      <div class="location-info">
+        <i class="fas fa-calendar-check"></i>
+        <span>Reservation Records</span>
+      </div>
+    </header>
+  
+    <main class="main-content">
+      <div class="logo-section">
+        <img src="assets/history-icon.png" alt="History Icon" class="municipal-logo" />
+      </div>
+  
+      <div class="reservations-text">
+        <h1>Review Your Reservations</h1>
+        <p>Check the status and details of your current and past facility reservations.</p>
+      </div>
+  
+      <div class="reservation-list">
+        <div class="reservation-item" *ngFor="let reservation of reservations">
+          <h3>{{ reservation.facility }}</h3>
+          <p><strong>Date:</strong> {{ reservation.date }}</p>
+          <p><strong>Time:</strong> {{ reservation.time }}</p>
+          <p><strong>Status:</strong> <span [ngClass]="reservation.status">{{ reservation.status | titlecase }}</span></p>
+        </div>
+      </div>
+    </main>
+  </div>
+  

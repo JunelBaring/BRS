@@ -1,43 +1,137 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #a78bfa, #f472b6);
-  }
-  
-  .dashboard-box {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .dashboard-box h2 {
-    font-size: 24px;
-    color: #2563eb;
-    margin-bottom: 1rem;
-  }
-  
-  .dashboard-box p {
-    color: #374151;
-    margin-bottom: 1.5rem;
-  }
-  
-  .dashboard-box button {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #dc2626;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .dashboard-box button:hover {
-    background-color: #b91c1c;
-  }
-  
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffffff 70%, #e6d9f6 30%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- HEADER --- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 20px 20px;
+  margin: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #d4b4f0;
+}
+
+.greeting {
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content {
+  flex: 1;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-section .municipal-logo {
+  width: 150px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text h1 {
+  font-size: 1.8rem;
+  color: #6a4fb3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+.welcome-text p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #6a4fb3;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- BOTTOM NAVIGATION --- */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 1rem 0.5rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+  margin: 0 1rem;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6a4fb3;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav button:hover {
+  color: #553d99;
+}
+
+.bottom-nav i {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+/* --- Decorative Circles (same as .register-container::before and ::after) --- */
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  background-color: #d4b4f0;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.dashboard-container::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 200px;
+  height: 300px;
+  background-color: #d1d1d1;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 0;
+}

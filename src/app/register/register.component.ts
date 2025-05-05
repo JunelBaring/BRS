@@ -23,8 +23,13 @@ export class RegisterComponent {
   constructor(private router: Router) {}
 
   onSubmit() {
-    // Simulate registration process
-    alert('Registration successful!');
+    if (this.formData.password !== this.formData.confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+
+    // Handle successful registration logic
+    console.log('User registered:', this.formData);
     this.router.navigate(['/login']);
   }
 
@@ -32,3 +37,4 @@ export class RegisterComponent {
     this.router.navigate(['/login']);
   }
 }
+

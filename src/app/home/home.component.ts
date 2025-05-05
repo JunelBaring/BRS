@@ -12,11 +12,16 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
   constructor(private router: Router) {}
  
-  goToLogin() {
+  goToNext() {
     this.router.navigate(['/login']);
   }
 
   goToRegister() {
     this.router.navigate(['/register']);
   }
-}
+
+
+  
+  }
+  
+
