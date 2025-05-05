@@ -1,7 +1,7 @@
-<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>BarangayReservationApp</title>
-  <base href="/BrgyRS/">
+  <base href="/BRS/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>:root{--fa-style-family-brands:"Font Awesome 6 Brands";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:block;src:url("./media/fa-brands-400-Q3XCMWHQ.woff2") format("woff2"),url("./media/fa-brands-400-R2XQZCET.ttf") format("truetype")}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url("./media/fa-regular-400-QSNYFYRT.woff2") format("woff2"),url("./media/fa-regular-400-XUOPSR7E.ttf") format("truetype")}:root{--fa-style-family-classic:"Font Awesome 6 Free";--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url("./media/fa-solid-900-5ZUYHGA7.woff2") format("woff2"),url("./media/fa-solid-900-PJNKLK6W.ttf") format("truetype")}
@@ -11,4 +11,4 @@
   <app-root ng-version="19.2.8" _nghost-ng-c3984273398 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c3984273398></router-outlet><app-home _nghost-ng-c3729458775 ngh="0"><div _ngcontent-ng-c3729458775 class="desktop-welcome-container"><div _ngcontent-ng-c3729458775 class="welcome-content"><div _ngcontent-ng-c3729458775 class="logo-section"><img _ngcontent-ng-c3729458775 src="/BRS/assets/logo.png" alt="Municipality Logo" class="logo"></div><div _ngcontent-ng-c3729458775 class="text-section"><h1 _ngcontent-ng-c3729458775>Welcome Resident!</h1><p _ngcontent-ng-c3729458775 class="description"> Plan your events, reserve barangay facilities, and enjoy hassle-free community services at your convenience. </p><button _ngcontent-ng-c3729458775 class="next-button" jsaction="click:;">Next</button><p _ngcontent-ng-c3729458775 class="info-text">Stay Connected &amp; Informed</p><div _ngcontent-ng-c3729458775 class="carousel-indicator"><span _ngcontent-ng-c3729458775 class="dot active"></span><span _ngcontent-ng-c3729458775 class="dot"></span><span _ngcontent-ng-c3729458775 class="dot"></span></div></div></div></div></app-home><!----></app-root>
 <script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-TEFG53GB.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c3729458775","r":1}]}}]}</script></body></html>
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c3729458775","r":1}]}}]}</script></body></html>`;
